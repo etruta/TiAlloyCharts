@@ -1,8 +1,7 @@
 <Alloy>
 	<Window class="container" layout="vertical">
 		<ScrollableView>
-			<Widget src="com.alco.highcharts" id="pie_chart"/>
-			<Widget src="com.alco.highcharts" id="line_chart"/>
+			<Widget src="com.alco.highcharts" id="chart"/>
 		</ScrollableView>
 	</Window>
 </Alloy>

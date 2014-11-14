@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highstock Example</title>
+    <script src="jquery.min.jsf"></script>
+    <script src="highcharts.jsf"></script>
+    <script src="exporting.jsf"></script>
+    <script type="text/javascript">
+      function plotChart(_chartOptions, _containerWidth) {
+        Ti.API.info('Webview: plotChart()');
+        if (_containerWidth) {
+          $("#container").css("min-width", _containerWidth + "px");
+        }
+        new Highcharts.Chart(_chartOptions);
+      }
+    </script>
+    <style>
+    </style>
+  </head>
+
+  <body>
+    <div id="container" style="margin: 0 auto"></div>
+  </body>
+</html>
